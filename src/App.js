@@ -1,31 +1,44 @@
-import { useState } from 'react';
+import { React } from 'react';
 import './App.css';
 import Navbar from './Navbar'
-import {AiFillLinkedin, AiFillGithub, AiFillInstagram, AiFillMail, AiFillEnvironment, AiFillPhone} from 'react-icons/ai'
+import {AiFillLinkedin, AiFillGithub, AiFillMail, AiFillEnvironment, AiFillPhone} from 'react-icons/ai'
+import miFoto from './fotoIvan.jpg'
+import certHenry from './certHenry.jpg'
+import utn from './certUTN.jpg'
 
 function App() {
+   
   return (
     <main className='px-8 md:px-20 lg:px-40'>
     
     <Navbar />
 
     <section id='home' className='min-h-screen text-center mt-4 flex flex-col justify-center '>
-        <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-56 h-56 relative overflow-hidden md:h-96 md:w-96 mb-2">
-          <img src='/avatar.png' layout="fill" objectFit="cover" />
+        <div className="foto">
+          <center>
+          <img src={miFoto} alt= 'Imagen no encontrada' layout="fill" objectfit="cover" />
+          </center>
         </div>
-        <h1 className='text-3xl md:text-5xl font-medium text-teal-500'>DAMASUKMA TRIHANANDI</h1>
-        <h3 className='text-xl md:text-2xl'>Cloud & Software Engineer</h3>
-        <p className='text-md py-1 text-gray-800 md:text-xl'>Enthusiastic and motivated self-learning about information technology. Focused on cloud computing, devsecops, and web development. Now I am looking for more experience in my field. </p>
-        <div className='text-5xl py-4 flex justify-center gap-16 text-gray-600'>
-          <AiFillLinkedin /> 
-          <AiFillGithub />
-          <AiFillInstagram />
+        <h1 className='text-6xl md:text-5xl font-medium text-teal-500'>Iván Romano</h1>
+        <h3 className='text-xl md:text-2xl'>Fullstack Web Developer</h3>
+          <p className='text-md py-1 text-gray-800 md:text-xl'>
+            «I consider myself an entrepreneur
+            and also passionate about
+            technology. I have great
+            communication skills and great
+            initiative. I am curious, so I am
+            interested in constantly learning new
+            things in a self-taught way» 
+          </p>
+        <div className='text-6xl py-4 flex justify-center gap-16 text-blue-600'>
+        <a  href="https://www.linkedin.com/in/iván-romano-028a18192"><AiFillLinkedin /></a>
+        <a  href='https://github.com/codeMaker007'><AiFillGithub /></a>  
         </div>
     </section>
 
     <section id='service' className=''>
       <h1 className='text-xl font-medium'>Services I Offer</h1>
-      <p className='mt-1 text-md'>I have experience in building an application and creating cloud architecture as an integration to provide business and consumer solutions. I offer a wide of service, including Frontend & Backend Development, Cloud & IT Solutions Architect, DevOps Architect</p>
+      <p className='mt-1 text-md'>I have experience in building an application to provide business and consumer solutions. I offer a wide of service, including Frontend & Backend Development.</p>
 
       <div className='mt-4 flex flex-col md:flex-row gap-8'>
         <div className='w-full shadow-lg rounded-md px-4 py-5 flex flex-col items-center text-center gap-1'>
@@ -34,33 +47,13 @@ function App() {
           <p className='text-gray-500'>I can help you solve a problem, build a product or grow existing project.</p>
           <p className='text-xl '>Tools I Use</p>
           <ul>
+            <li>JavaScript</li>
             <li>React</li>
             <li>Node JS (Express)</li>
-            <li>Python (Flask)</li>
-          </ul>
-        </div>
-
-        <div className='w-full shadow-lg rounded-md px-4 py-5 flex flex-col items-center text-center gap-1'>
-          <img src='cloud.png' className='w-48' alt='gambar' />
-          <h2 className='text-xl'>Cloud & IT Solutions Architect</h2>
-          <p className='text-gray-500'>I can help you solve a problem, build a product or grow existing project.</p>
-          <p className='text-xl'>Tools I Use</p>
-          <ul>
-            <li>AWS, Azure, Digital Ocean</li>
-            <li>Openstack</li>
-            <li>Kubernetes & Docker</li>
-          </ul>
-        </div>
-
-        <div className='w-full shadow-lg rounded-md px-4 py-5 flex flex-col items-center text-center gap-1'>
-          <img src='ops.png' className='w-48' alt='gambar' />
-          <h2 className='text-xl'>DevOps Architect</h2>
-          <p className='text-gray-500'>I can help you solve a problem, build a product or grow existing project.</p>
-          <p className='text-xl '>Tools I Use</p>
-          <ul>
-            <li>Gitlab</li>
-            <li>Ansible</li>
-            <li></li>
+            <li>Redux</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SQL</li>
           </ul>
         </div>
 
@@ -80,80 +73,27 @@ function App() {
       <div className='flex flex-col md:flex-row gap-8 mt-4'>
         <div className='w-full md:w-2/6 shadow-md rounded '>
           <div className='h-48 md:h-56 rounded-t-md relative overflow-hidden'>
-            <img src='https://source.unsplash.com/random' layout="fill" objectFit="cover"/>
+            <img src={certHenry} layout="fill" objectfit="cover" alt= 'Imagen no encontrada'/>
           </div>
           <div className='p-4'>
-            <h1 className='text-xl font-medium'>Dasar Pemrograman Javascript</h1>
-            <p className=''>Dicoding Indonesia</p>
-            <p className='text-sm text-gray-500'>May 2023</p>
+            <h1 className='text-xl font-medium'>Henry</h1>
+            <p className=''>Full Stack Web Developer</p>
+            <p className='text-sm text-gray-500'>October 2022</p>
           </div>
         </div>
 
         <div className='w-full md:w-2/6 shadow-md rounded '>
           <div className='h-48 md:h-56 rounded-t-md relative overflow-hidden'>
-            <img src='https://source.unsplash.com/random' layout="fill" objectFit="cover"/>
+            <img src={utn} layout="fill" objectfit="cover" alt= 'Imagen no encontrada'/>
           </div>
           <div className='p-4'>
-            <h1 className='text-xl font-medium'>Dasar Pemrograman Javascript</h1>
-            <p className=''>Dicoding Indonesia</p>
-            <p className='text-sm text-gray-500'>May 2023</p>
-          </div>
-        </div>
-
-        <div className='w-full md:w-2/6 shadow-md rounded '>
-          <div className='h-48 md:h-56 rounded-t-md relative overflow-hidden'>
-            <img src='https://source.unsplash.com/random' layout="fill" objectFit="cover"/>
-          </div>
-          <div className='p-4'>
-            <h1 className='text-xl font-medium'>Dasar Pemrograman Javascript</h1>
-            <p className=''>Dicoding Indonesia</p>
-            <p className='text-sm text-gray-500'>May 2023</p>
+            <h1 className='text-xl font-medium'>Universidad Tecnologica Nacional</h1>
+            <p className=''>Programming Fundamentals</p>
+            <p className='text-sm text-gray-500'>April 2019</p>
           </div>
         </div>
       </div>
 
-    </section>
-    
-    <section id='honor' className='mt-10'>
-    <h1 className='text-xl font-medium'>Honors & Rewards</h1>
-    <p className='mt-1 text-md'>Here are some of the honor and rewards I have.</p>
-
-    <div className='flex rounded shadow-md flex-col md:flex-row px-2 py-4'>
-      <div className='pl-4 mt-2 md:w-3/6'>
-        <p className="font-bold">Top 10 SELEKNAS Asean Skill Competition 2022</p>
-        <p className='text-gray-500'>Issued by KEMENAKER RI</p>
-        <ul className='list-disc pl-4'>
-          <li>Linux Server</li>
-          <li>Windows Server</li>
-          <li>Linux Routing</li>
-          <li>Cisco Troubleshooting</li>
-          <li>Cisco Network Analysis</li>
-          <li>Network and System Programmabillity</li>
-          <li>Containerized Service</li>
-        </ul>
-      </div>
-      <div className='pl-4 mt-2 md:w-3/6'>
-        <p className="font-bold">3rd Place Winner of IT Network System Administration - LKS Jawa Tengah 2022</p>
-        <p className='text-gray-500'>Issued by KEMENDIKBUD RI</p>
-        <ul className='list-disc pl-4'>
-          <li>Linux Server</li>
-          <li>Windows Server</li>
-          <li>Cisco Configuration</li>
-          <li>Cisco Troubleshooting</li>
-          <li>Network and System Programmabillity</li>
-          <li>Containerized Service</li>
-        </ul>
-      </div>
-      <div className='pl-4 mt-2 md:w-3/6'>
-        <p className="font-bold">1st Place winner of IT Network System Administration - LKS Kab. Tegal 2022</p>
-        <p className='text-gray-500'>Issued by KEMENDIKBUD RI</p>
-        <ul className='list-disc px-4'>
-          <li>Linux Server</li>
-          <li>Cisco Configuration</li>
-        </ul>
-      </div>
-    </div>
-    
     </section>
 
     <section id="footer" className='mt-5 rounded bg-black py-8 px-8'>
@@ -164,29 +104,27 @@ function App() {
         <ul className='md:flex justify-center gap-4'>
           <li className='flex items-center gap-2'>
             <AiFillMail />
-            <p>damasukmath@gmail.com</p>
+            <p>ivan.ac.romano@gmail.com</p>
           </li>
           <li className='flex items-center gap-2'>
             <AiFillEnvironment />
-            <p>Kab. Tegal</p>
+            <p>Buenos Aires</p>
           </li>
           <li className='flex items-center gap-2'>
             <AiFillPhone/>
-            <p>0858-0058-9558</p>
+            <p>+054 11 6893 6010</p>
           </li>
         </ul>
 
         <div className='flex text-xl text-white gap-4 mt-2 md:justify-center'>
           <AiFillLinkedin /> 
           <AiFillGithub />
-          <AiFillInstagram />
         </div>
 
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"/>
 
         <p className="text-center text-sm text-gray-300 sm:text-center">
-          © 2022
-          <a href="https://dendi.ninja"> Damasukma Trihanandi</a>. All Rights Reserved.
+          © 2023 Iván Romano
         </p>
 
       </div>

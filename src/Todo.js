@@ -34,7 +34,7 @@ function Todo() {
       };
 
       const todoIndex = todos.findIndex(function (todo) {
-        return todo.id == edit.id;
+        return todo.id === edit.id;
       });
 
       const updatedTodos = [...todos];
@@ -61,7 +61,7 @@ function Todo() {
 
   function deleteTodosHandler(todoId) {
     const updateTodos = todos.filter(function (todo) {
-      return todo.id != todoId;
+      return todo.id !== todoId;
     });
     setTodos(updateTodos);
     if (edit.id) {
@@ -85,7 +85,7 @@ function Todo() {
     todo.done ? (todo.done = false) : (todo.done = true);
 
     const todoIndex = todos.findIndex(function (currentTodo) {
-      return currentTodo.id == todo.id;
+      return currentTodo.id === todo.id;
     });
 
     const updatedTodos = [...todos];

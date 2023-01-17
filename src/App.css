@@ -13,6 +13,27 @@
   }
 }
 
+.foto {
+  /* mx-auto
+  bg-gradient-to-b from-teal-500 
+  rounded-full 
+  w-56 
+  h-56 
+  relative 
+  overflow-hidden 
+  md:
+  h-96 
+  md:
+  w-96 
+  mb-2 
+  background-color: #58f752;*/
+  width: 56;
+  height: 56;
+  position: relative;
+  overflow: hidden;
+  
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
