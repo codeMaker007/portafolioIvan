@@ -112,7 +112,7 @@ function App() {
           </li>
           <li className='flex items-center gap-2'>
             <AiFillPhone/>
-            <p>+054 11 6893 6010</p>
+            <p>+054 11 3086 6010</p>
           </li>
         </ul>
 

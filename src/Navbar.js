@@ -6,7 +6,7 @@ export default function Navbar(){
             <h1 className="font-burtons text-lg">Hello!</h1>
             <ul className="flex items-center">
                 <li><BsFillMoonStarsFill /></li>
-                <a className="px-4 py-2 bg-gradient-to-r from-cyan-500 text- to-teal-500 bg-blue-300 rounded-md ml-8 text-white" href="https://drive.google.com/file/d/1ropcRl53-fVcwmZ8LLh0eXVaJ9Hh2kSY/view?usp=share_link">Resume</a>
+                <a className="px-4 py-2 bg-gradient-to-r from-cyan-500 text- to-teal-500 bg-blue-300 rounded-md ml-8 text-white" href="https://drive.google.com/file/d/1IH74m1QE3VmW60q_AapUKJcer1leXzPS/view?usp=drive_link">Resume</a>
             </ul>
         </nav>
     )
